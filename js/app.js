@@ -34,5 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
             buttons[i].addEventListener('click', showHide);
         }
 //koniec zadania nr 2    
+//zadanie nr 3
     
+    var navbar = document.querySelector('nav.navbar');   
+    
+    window.addEventListener('scroll', function() {
+        navbar.style.borderBottom = '1px solid #7f7f7f';
+    });
+    
+//koniec zadania nr 3    
 });
