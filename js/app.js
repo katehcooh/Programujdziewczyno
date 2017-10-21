@@ -1,0 +1,17 @@
+'use strict';
+document.addEventListener('DOMContentLoaded', function() {
+//zadanie nr 1    
+     var menuElement = document.querySelector('.for-dropdown');
+     var dropdownList = document.querySelector('.for-dropdown .dropdown');
+    
+    menuElement.addEventListener('mouseover', function() {
+        dropdownList.style.display = 'block';
+    });
+    
+     menuElement.addEventListener('mouseout', function() {
+        dropdownList.style.display = 'none';
+    });
+ //koniec zadania nr 1   
+
+
+});
