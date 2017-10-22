@@ -300,11 +300,18 @@ nav {
 footer {
   margin-top: 4rem;
   background-color: #44ca85;
-  height: 10rem;
+  height: 12rem;
 }
 
 footer p {
   font-size: 1.2rem;
   color: #424343;
   margin-top: 3rem;
+}
+
+footer .btn {
+    background-color: #44ca85;
+    color: #424343;
+    border: 1px solid #424343;
+    
 }

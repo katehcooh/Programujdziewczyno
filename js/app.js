@@ -42,5 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.style.borderBottom = '1px solid #7f7f7f';
     });
     
-//koniec zadania nr 3    
+//koniec zadania nr 3  
+//zadanie nr 4
+    
+    var upButton = document.querySelector('.up-button');
+    
+    upButton.addEventListener('click', function() {
+       window.scroll(0,0); 
+    });
+    
+//koniec zadania nr 4
 });
