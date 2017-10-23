@@ -275,8 +275,16 @@ nav {
   margin-bottom: 4rem;
 }
 
+.org {
+    display: none;
+}
+
 .slider {
-  list-style: none;
+  list-style: none;  
+}
+
+.visible {
+    display: inline-block;
 }
 
 .dot {

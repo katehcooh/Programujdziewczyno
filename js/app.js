@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             textArea.style.display = 'none'
             this.innerHTML = 'WIĘCEJ <span class="glyphicon glyphicon-chevron-down"></span>';
-        }        
+        }  
         };
     
         for (var i = 0; i < buttons.length; i++) {
@@ -52,4 +52,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
 //koniec zadania nr 4
+//zadanie nr 5
+    
+    var items = document.querySelectorAll('.org');
+       
+    var dots = document.querySelectorAll('.dot');
+        
+        dots[0].addEventListener('click', function() {
+            for (var i=0; i<dots.length; i++) {
+            dots[i].classList.remove('active');
+            items[i].classList.remove('visible'); 
+            }
+            this.classList.add('active');
+            items[0].classList.add('visible');
+        });
+        dots[1].addEventListener('click', function() {
+            for (var i=0; i<dots.length; i++) {
+            dots[i].classList.remove('active');
+            items[i].classList.remove('visible'); 
+            }
+            this.classList.add('active');
+            items[1].classList.add('visible');
+        });
+        dots[2].addEventListener('click', function() {
+            for (var i=0; i<dots.length; i++) {
+            dots[i].classList.remove('active');
+            items[i].classList.remove('visible'); 
+            }
+            this.classList.add('active');
+            items[2].classList.add('visible');
+        });
+    
+//koniec zadania nr 5
 });
