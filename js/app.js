@@ -84,4 +84,51 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     
 //koniec zadania nr 5
+//zadanie nr 6
+
+    var addButton = document.querySelector('.add-task-btn');
+    var tasksList = document.querySelector('.list-group');
+    var input = document.querySelector('.form-control');
+    var newTask = document.createElement('li');
+    var button = document.createElement('button');
+    var newTaskContent = document.createElement('div');
+    var done = document.createElement('button');
+   
+    
+    function addTask() {
+        newTask.innerHTML = input.value;        
+        tasksList.appendChild(newTask);
+        input.value = '';
+        
+    } 
+    
+      
+    function addTaskWithDeleteButton() {
+        button.innerHTML = 'usuń';
+        button.classList.add('delete-btn', 'btn', 'btn-secondary');
+        newTaskContent.innerHTML = input.value;
+        newTask.appendChild(newTaskContent);
+        newTask.appendChild(button);
+       
+    }
+    
+    function doneButton() {
+        done.innerHTML = 'zrobione';
+        done.classList.add('done-btn', 'btn', 'btn-secondary');
+        newTask.appendChild(done);
+    }
+    
+    addButton.addEventListener('click', addTask);
+    addButton.addEventListener('click', doneButton);
+    addButton.addEventListener('click', addTaskWithDeleteButton);
+   
+    button.addEventListener('click', function() {
+         this.parentElement.parentNode.removeChild(this.parentElement);
+    });
+    done.addEventListener('click', function() {       
+        this.parentElement.style.textDecoration= 'line-through';
+           });
+    
+    
+//koniec zadania nr 6
 });

@@ -228,6 +228,7 @@ nav {
   padding: .5rem 1rem;
   background-color: #F58122;
   border-radius: .5rem;
+
 }
 
 .add-task-btn {
@@ -240,6 +241,22 @@ nav {
 .add-task-btn:hover, 
 .add-task-btn:active {
   color: #fff;
+}
+
+.delete-btn {
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #fff;
+  background-color: #ea6c56;
+  margin: 0.5rem; 
+  
+}
+.done-btn {
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #fff;
+  background-color: #44ca85;
+  margin: 0.5rem;
 }
 
 .orgs h3 {
